@@ -1,5 +1,6 @@
 import * as React from "react";
 import { View, Text } from "react-native";
+import ButtonStart from "./component/ButtonStart";
 
 export default function App() {
   var colors = ["#262484", "#eb5674", "#f1b710", "#37b491"]
@@ -13,7 +14,7 @@ export default function App() {
         backgroundColor: color,
       }}
     >
-      <Text>Universal React with Expo</Text>
+      <ButtonStart></ButtonStart>
     </View>
   );
 }
