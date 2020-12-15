@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import ButtonStart from "./component/ButtonStart";
 
 export default function App() {
@@ -14,7 +14,24 @@ export default function App() {
         backgroundColor: color,
       }}
     >
-      <ButtonStart></ButtonStart>
+      <TouchableOpacity style={{
+          backgroundColor: "white",
+          padding: 40,
+          borderRadius: 150,
+      }}>
+        <Text style={{
+            fontSize: 100,
+            fontWeight: 'bold',
+            color: color,
+            fontStyle: 'italic',
+        }}>ON</Text>
+        <Text style={{
+            fontSize: 32,
+            fontWeight: 'bold',
+            color: color,
+            fontStyle: 'italic',
+        }}>SE LANCE ?</Text>
+      </TouchableOpacity>
     </View>
   );
 }
